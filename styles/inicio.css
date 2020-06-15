@@ -1,0 +1,97 @@
+@font-face{
+    font-family: "Bebas";
+    src: url(./fonts/BebasNeue-Regular.ttf);
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.cabecera{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-family: "Bebas";
+}
+
+.cabecera > h1{
+    width: 20%;
+    padding: 50px;
+    font-size: 50px;
+    color: tomato;
+}
+
+.cabecera > h1:hover{
+    text-shadow: 3px 3px 1px black;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.menu li{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu li:hover, a:hover{
+    color: tomato;
+}
+
+.submenu{
+    display: none;
+    background-color: white;
+}
+
+
+.submenu li a:hover{
+    background-color: tomato;
+    color: black;
+    padding: 5px;
+}
+
+.menu li:hover .submenu{
+    display: block;
+    position: fixed;
+    width: 8%;
+    padding: 10px;
+}
+
+.contenido{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido > img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 5px 10px 5px black;
+}

@@ -1,0 +1,68 @@
+.consulta{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+}
+
+.cabecera_con{
+    background-color: tomato;
+}
+
+.consulta tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consulta td{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.consulta td a:hover{
+    text-decoration: underline;
+}
+
+#clave{
+    display: none;
+}
+
+.refacciones{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.caja_contenido{
+    padding: 20px;
+    box-shadow: 0px 0px 10px tomato;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.caja_contenido h4, h2{
+    padding: 10px;
+}
+
+.caja_precio{
+    padding: 20px;
+    box-shadow: 0px 0px 10px tomato;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.caja_precio h3, h2{
+    padding: 10px;
+}
+
+.cliente{
+    width: 90%;
+}

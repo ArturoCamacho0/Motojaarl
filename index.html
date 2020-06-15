@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Motojaarl</title>
+        <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
+    </head>
+
+    <body>
+        <section>
+            <div id="imagen_sesion">
+                <img src="./styles/images/moto.jpg"/>
+            </div>
+
+            <div id="iniciar_sesion">
+                <h1>Inicia sesión</h1>
+                <form action="./pages/iniciar_sesion.php" method="POST">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario"/>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password"/>
+                    <input type="submit" value="Iniciar sesión"/>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
