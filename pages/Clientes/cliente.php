@@ -36,7 +36,7 @@ if($clave){
                 <li><a href="../inicio.php">Inicio</a></li>
 
                 <li>Refacciones
-                    <ul class="submenu">
+                <ul class="submenu">
                         <li><a href="../refacciones/consulta_1.php">Consultar</a></li>
                         <li><a href="../refacciones/registro_1.php">Agregar</a></li>
                         <li><a href="../refacciones/modificar_1.php">Modificar</a></li>
@@ -55,10 +55,10 @@ if($clave){
 
                 <li>Ventas
                     <ul class="submenu">
-                        <li><a>Mostrador</a></li>
-                        <li><a>Cliente</a></li>
-                        <li><a>Consultar</a></li>
-                        <li><a>Eliminar</a></li>
+                        <li><a href="../ventas/mostrador_1.php">Mostrador</a></li>
+                        <li><a href="../ventas/cliente_1.php">Cliente</a></li>
+                        <li><a href="../ventas/consulta_1.php">Consultar</a></li>
+                        <li><a href="../ventas/borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 

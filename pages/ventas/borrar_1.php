@@ -15,7 +15,7 @@
                 <li><a href="../inicio.php">Inicio</a></li>
 
                 <li>Refacciones
-                <ul class="submenu">
+                    <ul class="submenu">
                         <li><a href="../refacciones/consulta_1.php">Consultar</a></li>
                         <li><a href="../refacciones/registro_1.php">Agregar</a></li>
                         <li><a href="../refacciones/modificar_1.php">Modificar</a></li>
@@ -25,19 +25,19 @@
 
                 <li>Clientes
                     <ul class="submenu">
-                        <li><a href="./consulta_1.php">Consultar</a></li>
-                        <li><a href="./registro_1.php">Agregar</a></li>
-                        <li><a href="./modificar_1.php">Modificar</a></li>
-                        <li><a href="./borrar_1.php">Eliminar</a></li>
+                        <li><a href="../clientes/consulta_1.php">Consultar</a></li>
+                        <li><a href="../clientes/registro_1.php">Agregar</a></li>
+                        <li><a href="../clientes/modificar_1.php">Modificar</a></li>
+                        <li><a href="../clientes/borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 
                 <li>Ventas
                     <ul class="submenu">
-                        <li><a href="../ventas/mostrador_1.php">Mostrador</a></li>
-                        <li><a href="../ventas/cliente_1.php">Cliente</a></li>
-                        <li><a href="../ventas/consulta_1.php">Consultar</a></li>
-                        <li><a href="../ventas/borrar_1.php">Eliminar</a></li>
+                        <li><a href="./mostrador_1.php">Mostrador</a></li>
+                        <li><a href="./cliente_1.php">Cliente</a></li>
+                        <li><a href="./consulta_1.php">Consultar</a></li>
+                        <li><a href="./borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 
@@ -47,12 +47,12 @@
 
         <!-- Contenido -->
         <section class="contenido">
-            <h2>Modificar cliente</h2>
-            <form class="consulta_form" method="POST" action="modificar_1_5.php">
-                <h3>Consultar cliente a modificar</h3>
-                <label for="nombre">Ingrese el nombre del cliente que desea modificar</label>
-                <input type="text" name="nombre"/>
-                <input type="submit" value="Buscar"/>
+            <h2>Borrar ventas</h2>
+            <form class="consulta_form" method="POST" action="borrar_2.php">
+                <h3>Ingrese la clave de la venta para borrar</h3>
+                <label for="clave"></label>
+                <input type="text" name="id"/>
+                <input type="submit" value="Borrar"/>
             </form>
         </section>
     </body>

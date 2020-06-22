@@ -15,7 +15,7 @@
                 <li><a href="../inicio.php">Inicio</a></li>
 
                 <li>Refacciones
-                    <ul class="submenu">
+                <ul class="submenu">
                         <li><a href="./consulta_1.php">Consultar</a></li>
                         <li><a href="./registro_1.php">Agregar</a></li>
                         <li><a href="./modificar_1.php">Modificar</a></li>
@@ -25,7 +25,7 @@
 
                 <li>Clientes
                     <ul class="submenu">
-                    <li><a href="../clientes/consulta_1.php">Consultar</a></li>
+                        <li><a href="../clientes/consulta_1.php">Consultar</a></li>
                         <li><a href="../clientes/registro_1.php">Agregar</a></li>
                         <li><a href="../clientes/modificar_1.php">Modificar</a></li>
                         <li><a href="../clientes/borrar_1.php">Eliminar</a></li>
@@ -34,10 +34,10 @@
 
                 <li>Ventas
                     <ul class="submenu">
-                        <li><a>Mostrador</a></li>
-                        <li><a>Cliente</a></li>
-                        <li><a>Consultar</a></li>
-                        <li><a>Eliminar</a></li>
+                        <li><a href="../ventas/mostrador_1.php">Mostrador</a></li>
+                        <li><a href="../ventas/cliente_1.php">Cliente</a></li>
+                        <li><a href="../ventas/consulta_1.php">Consultar</a></li>
+                        <li><a href="../ventas/borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 

@@ -16,10 +16,10 @@
 
                 <li>Refacciones
                 <ul class="submenu">
-                        <li><a href="./consulta_1.php">Consultar</a></li>
-                        <li><a href="./registro_1.php">Agregar</a></li>
-                        <li><a href="./modificar_1.php">Modificar</a></li>
-                        <li><a href="./borrar_1.php">Eliminar</a></li>
+                        <li><a href="../refacciones/consulta_1.php">Consultar</a></li>
+                        <li><a href="../refacciones/registro_1.php">Agregar</a></li>
+                        <li><a href="../refacciones/modificar_1.php">Modificar</a></li>
+                        <li><a href="../refacciones/borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 
@@ -34,10 +34,10 @@
 
                 <li>Ventas
                     <ul class="submenu">
-                        <li><a href="../ventas/mostrador_1.php">Mostrador</a></li>
-                        <li><a href="../ventas/cliente_1.php">Cliente</a></li>
-                        <li><a href="../ventas/consulta_1.php">Consultar</a></li>
-                        <li><a href="../ventas/borrar_1.php">Eliminar</a></li>
+                        <li><a href="./mostrador_1.php">Mostrador</a></li>
+                        <li><a href="./cliente_1.php">Cliente</a></li>
+                        <li><a href="./consulta_1.php">Consultar</a></li>
+                        <li><a href="./borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 
@@ -75,7 +75,7 @@
                     if($clave == '' || $clave == null){
                         echo "  <script type='text/javascript'>
                                     alert('Campos vacíos');
-                                    window.location.href='consulta_1.php';
+                                    window.location.href='cliente_1.php';
                                 </script>";
                     }else{
                         $consulta = "SELECT * FROM refacciones WHERE clave LIKE '%$clave%'";
@@ -91,11 +91,11 @@
                         if($mostrar['nombre']){
                 ?>
                     <tr>
-                        <td><a href="refaccion.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['clave'] ?></a></td>
-                        <td><a href="refaccion.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['nombre'] ?></a></td>
-                        <td><a href="refaccion.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['descripcion'] ?></a></td>
-                        <td><a href="refaccion.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['tipo'] ?></a></td>
-                        <td><a href="refaccion.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['existencia'] ?></a></td>
+                        <td><a href="cliente_1.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['clave'] ?></a></td>
+                        <td><a href="cliente_1.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['nombre'] ?></a></td>
+                        <td><a href="cliente_1.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['descripcion'] ?></a></td>
+                        <td><a href="cliente_1.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['tipo'] ?></a></td>
+                        <td><a href="cliente_1.php?ref=<?php echo $mostrar['clave'] ?>"><?php echo $mostrar['existencia'] ?></a></td>
                     </tr>
                 <?php
                         }else{

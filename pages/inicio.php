@@ -33,10 +33,10 @@
 
                 <li>Ventas
                     <ul class="submenu">
-                        <li><a>Mostrador</a></li>
-                        <li><a>Cliente</a></li>
-                        <li><a>Consultar</a></li>
-                        <li><a>Eliminar</a></li>
+                        <li><a href="./ventas/mostrador_1.php">Mostrador</a></li>
+                        <li><a href="./ventas/cliente_1.php">Cliente</a></li>
+                        <li><a href="./ventas/consulta_1.php">Consultar</a></li>
+                        <li><a href="./ventas/borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 

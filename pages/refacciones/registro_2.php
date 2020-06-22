@@ -28,3 +28,4 @@ if (!$conexion) {
         echo "Error: ".$insertar."<br>".mysqli_error($conexion);
     }
 }
+

@@ -66,3 +66,46 @@
 .cliente{
     width: 90%;
 }
+
+#venta_listado{
+    width: 50%;
+}
+
+#venta_listado tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#venta_listado td{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#venta_listado > div{
+    background-color: tomato;
+    font-weight: bold;
+    padding: 10px;
+    float: right;
+}
+
+#acept{
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.in{
+    display: none;
+}
+
+#re{
+    overflow: scroll;
+}

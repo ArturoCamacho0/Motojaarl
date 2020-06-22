@@ -25,19 +25,19 @@
 
                 <li>Clientes
                     <ul class="submenu">
-                        <li><a href="./consulta_1.php">Consultar</a></li>
-                        <li><a href="./registro_1.php">Agregar</a></li>
-                        <li><a href="./modificar_1.php">Modificar</a></li>
-                        <li><a href="./borrar_1.php">Eliminar</a></li>
+                        <li><a href="../clientes/consulta_1.php">Consultar</a></li>
+                        <li><a href="../clientes/registro_1.php">Agregar</a></li>
+                        <li><a href="../clientes/modificar_1.php">Modificar</a></li>
+                        <li><a href="../clientes/borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 
                 <li>Ventas
                     <ul class="submenu">
-                        <li><a href="../ventas/mostrador_1.php">Mostrador</a></li>
-                        <li><a href="../ventas/cliente_1.php">Cliente</a></li>
-                        <li><a href="../ventas/consulta_1.php">Consultar</a></li>
-                        <li><a href="../ventas/borrar_1.php">Eliminar</a></li>
+                        <li><a href="./mostrador_1.php">Mostrador</a></li>
+                        <li><a href="./cliente_1.php">Cliente</a></li>
+                        <li><a href="./consulta_1.php">Consultar</a></li>
+                        <li><a href="./borrar_1.php">Eliminar</a></li>
                     </ul>
                 </li>
 
@@ -47,43 +47,35 @@
 
         <!-- Contenido -->
         <section class="contenido">
-            <h2>Refacciones que coinciden</h2>
+            <h2>Ventas por mayoreo</h2>
             <table class="consulta">
                 <tr class="cabecera_con">
+                    <td>Clave</td>
+                    <td>Fecha</td>
+                    <td>Refacciones</td>
                     <td>Cliente</td>
-                    <td>Nombre</td>
-                    <td>Refaccionaria</td>
-                    <td>Dirección</td>
-                    <td>Teléfono</td>
+                    <td>Monto</td>
                 </tr>
 
             <?php
             require '../conexion.php';
-            $nombre = $_POST['nombre'];
 
             if (!$conexion) {
                 die("Connection failed: " . mysqli_connect_error());
             }else{
-                if($nombre == '' || $nombre == null){
-                    echo "  <script type='text/javascript'>
-                                alert('Campos vacíos');
-                                window.location.href='borrar_1.php';
-                            </script>";
-                }else{
-                    $consulta = "SELECT * FROM cliente WHERE nombre LIKE '%$nombre%'";
-                    $result = mysqli_query($conexion, $consulta);
-                }
+                $consulta = "SELECT * FROM venta";
+                $result = mysqli_query($conexion, $consulta);
 
                 if ($result) {
                     while($mostrar = mysqli_fetch_array($result)){
-                        if($mostrar['nombre']){
+                        if($mostrar['id']){
                 ?>
                     <tr>
-                        <td><a href="borrar_3.php?ref=<?php echo $mostrar['id'] ?>"><?php echo $mostrar['id'] ?></a></td>
-                        <td><a href="borrar_3.php?ref=<?php echo $mostrar['id'] ?>"><?php echo $mostrar['nombre'] ?></a></td>
-                        <td><a href="borrar_3.php?ref=<?php echo $mostrar['id'] ?>"><?php echo $mostrar['refaccionaria'] ?></a></td>
-                        <td><a href="borrar_3.php?ref=<?php echo $mostrar['id'] ?>"><?php echo $mostrar['direccion'] ?></a></td>
-                        <td><a href="borrar_3.php?ref=<?php echo $mostrar['id'] ?>"><?php echo $mostrar['telefono'] ?></a></td>
+                        <td><?php echo $mostrar['id'] ?></td>
+                        <td><?php echo $mostrar['fecha'] ?></td>
+                        <td id="re"><?php echo $mostrar['refacciones'] ?></td>
+                        <td><?php echo $mostrar['cliente'] ?></td>
+                        <td><?php echo $mostrar['monto'] ?></td>
                     </tr>
                 <?php
                         }else{
@@ -92,7 +84,10 @@
                     }
 
                 }else{
-                    echo "Error: ".$consulta."<br>".mysqli_error($conexion);
+                    echo "<script type='text/javascript'>
+                    alert('No hay registros');
+                    window.location.href='consulta_1.php';
+                </script>";
                 }
 
             }
